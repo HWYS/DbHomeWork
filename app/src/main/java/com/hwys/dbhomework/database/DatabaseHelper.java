@@ -100,6 +100,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         List<MovieInfo> movieInfoList = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
 
+        //**** Hello this is version control test *****
+
         Cursor cursor = db.rawQuery("SELECT * FROM tbl_Movie WHERE id="+id, null);
 
         if(cursor.moveToFirst()){
