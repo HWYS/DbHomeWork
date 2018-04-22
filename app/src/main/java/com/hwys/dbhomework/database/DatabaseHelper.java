@@ -102,6 +102,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         //**** Hello this is version control test *****
 
+
         Cursor cursor = db.rawQuery("SELECT * FROM tbl_Movie WHERE id="+id, null);
 
         if(cursor.moveToFirst()){
@@ -118,6 +119,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 movieInfoList.add(info);
             }while (cursor.moveToNext());
         }
-        return movieInfoList;
+        return movieInfoList;//****
     }
 }
